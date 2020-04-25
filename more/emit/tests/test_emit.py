@@ -1,14 +1,8 @@
-import sys
 from webtest import TestApp as Client
 
 from more.emit import EmitApp
 
-PY3 = sys.version_info[0] == 3
-
-if PY3:
-    from io import StringIO
-else:
-    from StringIO import StringIO
+from io import StringIO
 
 
 def test_emit():
@@ -26,7 +20,7 @@ def test_emit():
         message.write('handler2 called with %s\n' % arg)
 
     @App.path(path='')
-    class Root(object):
+    class Root:
         pass
 
     @App.json(model=Root)

@@ -1,11 +1,8 @@
-
-import io
 from setuptools import setup, find_packages
 
 long_description = (
-    io.open('README.rst', encoding='utf-8').read()
-    + '\n\n' +
-    io.open('CHANGES.rst', encoding='utf-8').read())
+    open('README.rst', encoding='utf-8').read() + '\n\n'
+    + open('CHANGES.rst', encoding='utf-8').read())
 
 setup(name='more.emit',
       version='0.2.dev0',
@@ -23,12 +20,15 @@ setup(name='more.emit',
       classifiers=[
           'Intended Audience :: Developers',
           'License :: OSI Approved :: BSD License',
-          'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3.4',
           'Programming Language :: Python :: 3.5',
+          'Programming Language :: Python :: 3.6',
+          'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
+          'Programming Language :: Python :: Implementation :: PyPy',
       ],
       install_requires=[
-          'morepath >= 0.18',
+          'morepath >= 0.19',
           'pymitter'
       ],
       extras_require=dict(
