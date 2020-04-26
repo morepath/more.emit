@@ -8,7 +8,7 @@ long_description = (
 
 setup(
     name="more.emit",
-    version="0.2.dev0",
+    version="0.2",
     description="Pymitter integration in Morepath",
     long_description=long_description,
     author="Henri Hulski",
