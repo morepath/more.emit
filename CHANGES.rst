@@ -4,7 +4,9 @@ CHANGES
 0.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix Flake8.
+
+- Drop support for Python 3.4 and 3.5.
 
 
 0.2 (2020-04-26)
