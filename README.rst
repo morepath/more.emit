@@ -1,3 +1,18 @@
+.. image:: https://github.com/morepath/more.emit/workflows/CI/badge.svg?branch=master
+   :target: https://github.com/morepath/more.emit/actions?workflow=CI
+   :alt: CI Status
+
+.. image:: https://coveralls.io/repos/github/morepath/more.emit/badge.svg?branch=master
+    :target: https://coveralls.io/github/morepath/more.emit?branch=master
+
+.. image:: https://img.shields.io/pypi/v/more.emit.svg
+  :target: https://pypi.org/project/more.emit/
+
+.. image:: https://img.shields.io/pypi/pyversions/more.emit.svg
+  :target: https://pypi.org/project/more.emit/
+
+
+
 more.emit: pymitter integration in Morepath
 ===============================================
 

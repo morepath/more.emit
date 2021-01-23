@@ -8,6 +8,10 @@ CHANGES
 
 - Drop support for Python 3.4 and 3.5.
 
+- Add support for Python 3.9.
+
+- Use GitHub Actions.
+
 
 0.2 (2020-04-26)
 ----------------
