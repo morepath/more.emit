@@ -7,8 +7,10 @@ __pycache__/
 /build/
 /dist/
 
-# Virtualenv
+# Virtualenv and venv
 /env/
+/venv/
+/.venv/
 
 # Unit test / coverage reports
 .cache
@@ -19,3 +21,6 @@ htmlcov
 
 # Sphinx documentation
 /doc/build/
+
+# Editor
+.vscode
