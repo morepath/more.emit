@@ -35,7 +35,7 @@ Extend your App class from EmitApp:
 
 .. code-block:: python
 
-    from more.pony import EmitApp
+    from more.emit import EmitApp
 
     class App(EmitApp):
         pass
