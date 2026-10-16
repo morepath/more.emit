@@ -1,8 +1,8 @@
+from io import StringIO
+
 from webtest import TestApp as Client
 
 from more.emit import EmitApp
-
-from io import StringIO
 
 
 def test_emit():
@@ -13,11 +13,11 @@ def test_emit():
 
     @App.signal.on("myevent")
     def handler1(arg, request):
-        message.write("handler1 called with %s\n" % arg)
+        message.write(f"handler1 called with {arg}\n")
 
     @App.signal.on("myevent")
     def handler2(arg, request):
-        message.write("handler2 called with %s\n" % arg)
+        message.write(f"handler2 called with {arg}\n")
 
     @App.path(path="")
     class Root:
