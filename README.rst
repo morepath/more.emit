@@ -2,9 +2,6 @@
    :target: https://github.com/morepath/more.emit/actions?workflow=CI
    :alt: CI Status
 
-.. image:: https://coveralls.io/repos/github/morepath/more.emit/badge.svg?branch=master
-    :target: https://coveralls.io/github/morepath/more.emit?branch=master
-
 .. image:: https://img.shields.io/pypi/v/more.emit.svg
   :target: https://pypi.org/project/more.emit/
 
@@ -73,7 +70,7 @@ Example
 
 An example for emitting signals on user creation
 and user update for sending a confirmation email.
-This example uses `more.pony`_.
+This example can be used with `more.next`_ or `more.pony`_.
 
 signal.py
 
@@ -136,4 +133,5 @@ view.py
 
 .. _pymitter: https://github.com/riga/pymitter
 .. _EventEmitter 2: https://github.com/asyncly/EventEmitter2
+.. _more.next: https://github.com/morepath/more.next
 .. _more.pony: https://github.com/morepath/more.pony
