@@ -1,22 +1,28 @@
+from __future__ import annotations
+
 from io import StringIO
+from typing import TYPE_CHECKING
 
 from webtest import TestApp as Client
 
 from more.emit import EmitApp
 
+if TYPE_CHECKING:
+    from morepath import Request
 
-def test_emit():
+
+def test_emit() -> None:
     message = StringIO()
 
     class App(EmitApp):
         pass
 
     @App.signal.on("myevent")
-    def handler1(arg, request):
+    def handler1(arg: str, request: Request) -> None:
         message.write(f"handler1 called with {arg}\n")
 
     @App.signal.on("myevent")
-    def handler2(arg, request):
+    def handler2(arg: str, request: Request) -> None:
         message.write(f"handler2 called with {arg}\n")
 
     @App.path(path="")
@@ -24,7 +30,7 @@ def test_emit():
         pass
 
     @App.json(model=Root)
-    def root_view(self, request):
+    def root_view(self: Root, request: Request[App]) -> dict[str, str]:
         request.app.signal.emit("myevent", "foo", request)
         return {"message": message.getvalue()}
 
